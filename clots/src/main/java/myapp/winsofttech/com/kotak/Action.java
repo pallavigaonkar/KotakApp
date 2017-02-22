@@ -49,7 +49,7 @@ public class Action extends Fragment {
         ArrayAdapter<String> adapter;
         List<String> list;
         list =new ArrayList<String>();
-        list.add("select");
+        list.add("select list");
         adapter =new ArrayAdapter<String>(getActivity(),android.R.layout.simple_spinner_item,list);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         actionable.setAdapter(adapter);
