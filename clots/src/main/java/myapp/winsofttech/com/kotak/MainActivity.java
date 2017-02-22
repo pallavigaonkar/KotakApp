@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         button_AD_ID_Submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(editText_AD_ID.getText().toString().equals("123")){
+                if(editText_AD_ID.getText().toString().equals("1234")){
                     Intent i = new Intent(getApplicationContext(),LoginActivity.class);
                     i.putExtra("username","winsoft");
                     startActivity(i);
