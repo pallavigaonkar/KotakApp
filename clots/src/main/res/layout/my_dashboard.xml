@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_collapseParallaxMultiplier="1.0"
+    android:layout_width="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageButton
+                android:layout_width="100dp"
+                android:layout_height="113dp"
+                android:layout_gravity="right"
+                android:layout_marginRight="6dp"
+                android:id="@+id/mydashbord_profile" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+                <TextView
+                    android:text="User Name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/username"
+                    android:textSize="18sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dp"/>
+
+                <TextView
+                    android:text="Opportunity Count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/opprtunity_count"
+                    android:textSize="18sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dp"
+                    />
+
+
+                <TextView
+                    android:text="Actual Meetings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actual_meetings"
+                    android:textSize="18sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dp"/>
+
+                <TextView
+                    android:text="Customers"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/customers"
+                    android:textSize="18sp"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dp"/>
+
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/spinner"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="6dp" />
+
+                <TextView
+                    android:text="      My Meetings -"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/mymeeting"
+                    android:textSize="18sp"
+                    tools:layout_width="wrap_content" />
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:layout_height="140dp"
+                    android:id="@+id/graph1"/>
+
+                <TextView
+                    android:text="Task in-progress -"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/task_in_progress"
+                    android:textSize="18sp" />
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:id="@+id/graph2"/>
+
+                <TextView
+                    android:text="My Opportunities"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/my_opportunities"
+                    android:textSize="18sp" />
+
+                <com.jjoe64.graphview.GraphView
+                    android:layout_width="match_parent"
+                    android:layout_height="139dp"
+                    android:id="@+id/graph3"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+</LinearLayout>

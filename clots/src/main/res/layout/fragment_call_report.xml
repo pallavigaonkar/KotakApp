@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/colorWhite"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/f1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:isScrollContainer="false">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="8">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Call Subject :"
+                        android:textColor="#000000"
+                        android:layout_weight="0"/>
+
+
+                    <EditText
+                        android:id="@+id/input_callsubject"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Enter Subject"
+                        android:background="@drawable/border_edit_text"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:text="Call Details  :"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewcalldetails"
+                        android:layout_weight="0"
+                        android:textSize="14sp"
+                        android:textColor="@color/Black" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1">
+
+                    <EditText
+                        android:layout_width="fill_parent"
+                        android:layout_height="150dp"
+                        android:background="@drawable/border_edit_text"
+                        android:gravity="start|left"
+                        android:layout_weight="1"
+                        android:id="@+id/input__calldetails" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email Notification To :"
+                        android:textColor="#000000"
+                        android:layout_weight="0"/>
+
+
+                    <EditText
+                        android:id="@+id/input_notificationEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint=" Enter Email"
+                        android:background="@drawable/border_edit_text"
+                        android:singleLine="true"
+                        android:layout_weight="1"
+                        android:textSize="18dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1">
+                    <TextView
+                        android:text="addpepole"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/textViewaddpepole"
+                        android:textSize="14sp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="150dp"
+                        android:clickable="true"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_weight="2">
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="horizontal"
+                        android:layout_weight="1"
+                        android:id="@+id/attachmentFile"
+                        android:background="@drawable/border_edit_text">
+                        <LinearLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent">
+
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+                            <Button
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content" />
+
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_attach_file_black_24dp"
+                        android:id="@+id/buttonAttachment" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="10dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Submit"
+                        android:layout_marginLeft="120dp"
+                        android:id="@+id/buttonsubmit" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </FrameLayout>
+
+</LinearLayout>

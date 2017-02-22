@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Kotak</string>
+    <string name="title_activity_my_dashboard">MyDashboard</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="operations">Operations</string>
+    <string name="callreport">Call Report</string>
+    <string name="action">Action</string>
+    <string name="opportunities">Opportunity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Notification_blank_fragment">Notification blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Logout_blank_fragment">Logout blank fragment</string>
+    <string name="Offline_blank_fragment">Offline blank fragment</string>
+
+
+</resources>

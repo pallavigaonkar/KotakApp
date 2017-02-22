@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/KotakApp.iml" filepath="$PROJECT_DIR$/KotakApp.iml" />
+      <module fileurl="file://$PROJECT_DIR$/clots/clots.iml" filepath="$PROJECT_DIR$/clots/clots.iml" />
+    </modules>
+  </component>
+</project>

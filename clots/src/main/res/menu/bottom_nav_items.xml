@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="all">
+
+  <item android:title="Operations"
+      android:id="@+id/operations"
+      android:enabled="true"
+      app:showAsAction="ifRoom"
+      android:icon="@mipmap/operations"
+      android:checkable="false"
+      android:visible="true" />
+
+    <item android:title="Call Report"
+        android:id="@+id/callreport"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/callreport"
+        android:visible="true"
+        android:checkable="false"
+        />
+
+    <item android:title="Action"
+        android:id="@+id/action"
+        android:enabled="true"
+        app:showAsAction="ifRoom"
+        android:icon="@mipmap/action"
+        android:visible="true"
+        android:checkable="false" />
+
+
+   <item android:title="Opportunity"
+       android:id="@+id/opportunity"
+       android:enabled="true"
+       app:showAsAction="ifRoom"
+        android:icon="@mipmap/opportunity"
+       android:visible="true"
+       android:checkable="false" />
+    </group>
+
+</menu>

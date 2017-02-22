@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:checkableBehavior="all">
+
+        <item android:title="Assigned to me"
+            android:id="@+id/assignedtome"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            android:icon="@mipmap/operations"
+            android:checkable="false"
+            android:visible="true" />
+
+        <item android:title="Assigned by me"
+            android:id="@+id/assignedbyme"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            android:icon="@mipmap/callreport"
+            android:visible="true"
+            android:checkable="false"
+            />
+
+        <item android:title="My Comments"
+            android:id="@+id/mycomments"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            android:icon="@mipmap/action"
+            android:visible="true"
+            android:checkable="false" />
+
+
+        <item android:title="My Pending Tasks"
+            android:id="@+id/mypendingtasks"
+            android:enabled="true"
+            app:showAsAction="ifRoom"
+            android:icon="@mipmap/opportunity"
+            android:visible="true"
+            android:checkable="false" />
+    </group>
+
+</menu>

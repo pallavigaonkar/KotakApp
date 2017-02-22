@@ -1,0 +1,437 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_collapseParallaxMultiplier="0.5"
+    android:background="@color/colorWhite"
+    app:layout_scrollFlags="scroll">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/f1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:isScrollContainer="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_gravity="center"
+                    android:gravity="center">
+
+                    <android.support.v7.widget.SwitchCompat
+                        android:id="@+id/switch_compat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="New"
+                        app:showText="false"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="View/Edit"
+                        android:textColor="#000000"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/mainlayout"
+                    android:visibility="gone"
+                    android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Company name :"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"
+                                    />
+
+
+                                <EditText
+                                    android:id="@+id/input_compname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="company name"
+                                    android:inputType="textPersonName"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="From Date:"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+                                <EditText
+                                    android:id="@+id/input_frmdate"
+                                    android:layout_width="match_parent"
+                                    android:focusable="false"
+                                    android:drawableRight="@mipmap/schedule"
+                                    android:textSize="14sp"
+                                    android:layout_height="38dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="To Date:"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+
+                                <EditText
+                                    android:id="@+id/input_todate"
+                                    android:layout_width="match_parent"
+                                    android:drawableRight="@mipmap/schedule"
+                                    android:focusable="false"
+                                    android:textSize="14sp"
+                                    android:layout_height="38dp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="vertical">
+                                <RadioGroup
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:id="@+id/RGroup">
+
+                                    <RadioButton
+                                        android:layout_width="103dp"
+                                        android:layout_height="wrap_content"
+                                        android:text="Call"
+                                        android:id="@+id/radiobuttoncall"/>
+                                    <RadioButton
+                                        android:layout_width="108dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Action"
+                                        android:id="@+id/radiobuttonaction" />
+                                    <RadioButton
+                                        android:layout_width="126dp"
+                                        android:layout_height="match_parent"
+                                        android:text="Opportunity"
+                                        android:id="@+id/radiobuttonoppotunity"/>
+
+                                </RadioGroup>
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="65dp"
+                                android:layout_margin="10dp">
+                                <Button
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Search"
+                                    android:layout_marginLeft="100dp" />
+
+                            </LinearLayout>
+                            <ListView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/listview"
+                                >
+
+                            </ListView>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical"/>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical"/>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:id="@+id/mainlayout2">
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Group Name * :"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000" />
+
+
+                                <EditText
+                                    android:id="@+id/input_groupname"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Group name"
+                                    android:inputType="textPersonName"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Company Name * :"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+
+                                <EditText
+                                    android:id="@+id/input_comp2"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="company name"
+                                    android:inputType="textPersonName"
+                                    android:textSize="14sp" />
+
+                            </LinearLayout>
+
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Date of Meeting :"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+
+                                <EditText
+                                    android:id="@+id/input_dom"
+                                    android:layout_width="match_parent"
+                                    android:focusable="false"
+                                    android:drawableRight="@mipmap/schedule"
+                                    android:textSize="14sp"
+                                    android:layout_height="wrap_content" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Client Representative:"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+                                <EditText
+                                    android:id="@+id/input_referraltype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Client_ Representative"
+                                    android:inputType="textPersonName"
+                                    android:textSize="14sp" />
+
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Client Type * :"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+
+                                <Spinner
+                                    android:id="@+id/input_clienttype"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@android:style/Widget.Spinner" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Attendees from kotak:"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+
+                                <EditText
+                                    android:id="@+id/input_ktkattend"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="attendees"
+                                    android:inputType="textPersonName"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Primary Person * :"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+
+                                <EditText
+                                    android:id="@+id/input_primaryperson"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:hint="Primary Person"
+                                    android:inputType="textPersonName"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Type of Referral:"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+                                <Spinner
+                                    android:id="@+id/input_typeofreferral"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@android:style/Widget.Spinner"/>
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="Tag call:"
+                                    android:layout_margin="5dp"
+                                    android:textColor="#000000"/>
+
+
+                                <Spinner
+                                    android:id="@+id/input_tagcall"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    style="@android:style/Widget.Spinner" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical"/>
+
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical"/>
+                            <LinearLayout
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_margin="10dp"
+                                android:orientation="vertical"/>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+
+
+        <FrameLayout
+            android:id="@+id/main_containernew"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottom_navigation"
+            android:layout_alignParentTop="true">
+        </FrameLayout>
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/bottom_navigationnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:itemBackground="@color/colorPrimary"
+            app:itemIconTint="@color/colorBorder"
+            app:itemTextColor="@color/colorDivider"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom">
+        </android.support.design.widget.BottomNavigationView>
+
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
